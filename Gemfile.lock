@@ -49,8 +49,6 @@ GEM
     hashie (3.5.5)
     http_parser.rb (0.6.0)
     i18n (0.7.0)
-    jquery-middleman (3.1.2)
-      thor (>= 0.14, < 2.0)
     kramdown (1.13.2)
     listen (3.0.8)
       rb-fsevent (~> 0.9, >= 0.9.4)
@@ -140,7 +138,6 @@ PLATFORMS
 
 DEPENDENCIES
   bourbon (~> 5.0.0.beta.7)
-  jquery-middleman
   middleman
   middleman-autoprefixer
   middleman-deploy!
@@ -148,5 +145,8 @@ DEPENDENCIES
   middleman-sprockets
   slim
 
+RUBY VERSION
+   ruby 2.3.0p0
+
 BUNDLED WITH
-   1.11.2
+   1.14.6
