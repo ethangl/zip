@@ -1,0 +1,37 @@
+.zip-button {
+  @include position(absolute, 0 0 0 null);
+  align-self: center;
+  appearance: none;
+  background-color: $base-font-color;
+  border: 0;
+  border-radius: 0.75rem;
+  color: darken($brand-color, 20%);
+  cursor: pointer;
+  display: inline-block;
+  font-family: $base-font-family;
+  font-size: 0.625rem;
+  font-weight: 700;
+  height: $base-spacing;
+  line-height: $base-spacing;
+  margin: 0.25rem;
+  opacity: 0;
+  padding: 0 0.625rem;
+  pointer-events: none;
+  text-transform: uppercase;
+  transition: box-shadow $base-transition, opacity $base-transition;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.zip-field:focus {
+  &:valid ~ .zip-button {
+    box-shadow: $card-box-shadow;
+    opacity: 1;
+    transition: box-shadow $slow-transition, opacity $slow-transition;
+  }
+
+  &:invalid ~ .zip-button {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+}

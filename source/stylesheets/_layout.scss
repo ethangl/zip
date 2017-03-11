@@ -1,0 +1,25 @@
+* {
+  &,
+  &::before,
+  &::after {
+    box-sizing: inherit;
+  }
+}
+
+html {
+  box-sizing: border-box;
+  font-size: $base-font-size;
+}
+
+body {
+  background-color: $brand-color;
+  color: $base-font-color;
+  font-family: $base-font-family;
+  margin: 0;
+}
+
+main {
+  @include position(absolute, 0);
+  @include size(9rem, 2rem);
+  margin: auto;
+}
