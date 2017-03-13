@@ -23,15 +23,9 @@
   white-space: nowrap;
 }
 
-.zip-field:focus {
-  &:valid ~ .zip-button {
-    box-shadow: $card-box-shadow;
-    opacity: 1;
-    transition: box-shadow $slow-transition, opacity $slow-transition;
-  }
-
-  &:invalid ~ .zip-button {
-    opacity: 0.5;
-    pointer-events: none;
-  }
+.zip-field:focus:valid ~ .zip-button {
+  box-shadow: 0 0 5px 0 rgba($shadow-color, 0.15);
+  opacity: 1;
+  pointer-events: auto;
+  transition: box-shadow $slow-transition, opacity $slow-transition;
 }
