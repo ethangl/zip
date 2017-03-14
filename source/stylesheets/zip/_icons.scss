@@ -1,5 +1,5 @@
 .zip-icon {
-  @include position(absolute, 0 null 0 0.375rem);
+  @include position(absolute, 0 null 0 0.5rem);
   @include size($base-spacing);
   margin: auto;
   pointer-events: none;

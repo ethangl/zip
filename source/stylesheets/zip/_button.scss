@@ -27,5 +27,5 @@
   box-shadow: 0 0 5px 0 rgba($shadow-color, 0.15);
   opacity: 1;
   pointer-events: auto;
-  transition: box-shadow $slow-transition, opacity $slow-transition;
+  transition: box-shadow $slow-transition, opacity $slow-transition $base-duration;
 }
